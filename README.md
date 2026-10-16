@@ -15,7 +15,7 @@ Requirements: .NET 10 SDK and Node.js.
 
    The API creates `NYSCRadioTV.API/App_Data/radio-tv.db` on first start and seeds editable NYSC TV and Radio preview channels.
 
-2. Copy `apps/web/.env.example` to `apps/web/.env.local`. Set `NEXT_PUBLIC_API_URL` if the API is not at `http://localhost:5078`. Configure the Firebase web app values to enable sign-in and chat.
+2. Copy `apps/web/.env.example` to `apps/web/.env.local`. Set `NEXT_PUBLIC_API_URL` if the API is not at `http://localhost:5078`. Configure the Firebase web app values, including `NEXT_PUBLIC_FIREBASE_DATABASE_URL` (the URL shown for the Realtime Database in the Firebase console), to enable sign-in and chat.
 3. In another terminal, start the web client:
 
    ```powershell
@@ -23,6 +23,8 @@ Requirements: .NET 10 SDK and Node.js.
    ```
 
 4. Sign in with a Firebase account that has the `admin: true` custom claim, then open `/admin/channels` to manage channel media URLs.
+
+Live chat messages are stored in Realtime Database at `/channels/{channelId}/messages`. To configure access, copy the contents of `database.rules.json` into Realtime Database > Rules in the Firebase console and publish them. These rules allow anyone to read chat messages, but only authenticated users can add messages under their own user ID; messages cannot be edited or deleted by clients. Set the same database URL as the `NEXT_PUBLIC_FIREBASE_DATABASE_URL` environment variable in Vercel, then redeploy. Existing Firestore chat messages are not automatically migrated.
 
 The SQLite path can be changed with `ConnectionStrings__RadioTv`. The Firebase project and allowed browser origins can be changed with `Firebase__ProjectId` and `Cors__AllowedOrigins__0` (additional allowed origins use `Cors__AllowedOrigins__1`, etc.).
 
