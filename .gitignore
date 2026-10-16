@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+apps/web/.next/
+apps/web/node_modules/
+apps/web/.env.local
+apps/web/.env.*.local
+node_modules/
+NYSCRadioTV.API/App_Data/*.db
+NYSCRadioTV.API/App_Data/*.db-shm
+NYSCRadioTV.API/App_Data/*.db-wal

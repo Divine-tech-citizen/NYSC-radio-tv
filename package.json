@@ -1,0 +1,12 @@
+{
+  "name": "nysc-radio-tv",
+  "private": true,
+  "scripts": {
+    "web": "npm --prefix apps/web run dev",
+    "web:build": "npm --prefix apps/web run build",
+    "api": "dotnet run --project NYSCRadioTV.API/NYSCRadioTV.API.csproj --launch-profile http"
+  },
+  "dependencies": {
+    "firebase": "^13.0.0"
+  }
+}

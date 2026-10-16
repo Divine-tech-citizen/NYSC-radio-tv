@@ -1,0 +1,6 @@
+@NYSCRadioTV.API_HostAddress = http://localhost:5078
+
+GET {{NYSCRadioTV.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

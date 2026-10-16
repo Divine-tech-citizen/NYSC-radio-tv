@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#073d31"/>
+      <stop offset="1" stop-color="#138257"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".78" cy=".28" r=".62">
+      <stop offset="0" stop-color="#d9aa4c" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#d9aa4c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect width="960" height="540" fill="url(#glow)"/>
+  <g fill="none" stroke="#d5efdf" stroke-opacity=".18">
+    <circle cx="695" cy="262" r="236" stroke-width="2"/>
+    <circle cx="695" cy="262" r="170" stroke-width="2"/>
+    <circle cx="695" cy="262" r="105" stroke-width="2"/>
+  </g>
+  <g fill="#fff" opacity=".82">
+    <path d="M80 182h5v50h-5zm17-22h5v94h-5zm17 39h5v16h-5zm17-45h5v106h-5zm17 25h5v56h-5zm17-36h5v128h-5z"/>
+  </g>
+  <text x="80" y="322" fill="#d7ecdf" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="8">NYSC RADIO &amp; TV</text>
+  <text x="80" y="386" fill="#fff" font-family="Arial,sans-serif" font-size="46" font-weight="700">Stories. Service. Community.</text>
+  <text x="80" y="431" fill="#d7ecdf" font-family="Arial,sans-serif" font-size="22">DEMO PREVIEW · NOT A LIVE BROADCAST</text>
+</svg>

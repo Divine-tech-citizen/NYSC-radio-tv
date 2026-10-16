@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="NYSCRadioTV.API/NYSCRadioTV.API.csproj" />
+  <Project Path="NYSCRadioTV.Application/NYSCRadioTV.Application.csproj" />
+  <Project Path="NYSCRadioTV.Domain/NYSCRadioTV.Domain.csproj" />
+  <Project Path="NYSCRadioTV.Infrastructure/NYSCRadioTV.Infrastructure.csproj" />
+  <Project Path="NYSCRadioTV.Tests/NYSCRadioTV.Tests.csproj" />
+</Solution>
